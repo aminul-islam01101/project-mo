@@ -67,7 +67,7 @@ p {
     font-size: 1.5rem;
   }
 }
-/* Badge */
+/* Badge  started*/
 .badge {
   border-radius: 2rem;
   color: #fff;
@@ -92,5 +92,37 @@ p {
   }
   .badge--small {
     font-size: 1.2rem;
+  }
+}
+/* Badge  ended*
+
+/* Lists */
+.list {
+  color: var(--color-headings);
+  font-size: 2rem;
+}
+.list--inline {
+  list-style-type: circle;
+}
+
+.list--inline .list__item {
+  margin-right: 2rem;
+  font-weight: 700;
+  /* font-size: 2rem; */
+  display: inline-block;
+
+  /* list-style-type: circle; */
+}
+
+.list--tick {
+  list-style-image: url(../icons/tick.svg);
+}
+.list--tick .list__item {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
   }
 }
