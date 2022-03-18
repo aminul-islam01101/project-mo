@@ -126,3 +126,21 @@ p {
     padding-left: 0;
   }
 }
+
+/* icons */
+.icon {
+  height: 90px;
+  width: 90px;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon-container {
+  background-color: var(--color-body);
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
