@@ -14,8 +14,8 @@ html {
 *::before {
   box-sizing: border-box;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -154,67 +154,101 @@ p {
 
 /* button */
 .btn {
-    border-radius: 40px;
-    border: 0;
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 2rem 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    white-space: nowrap;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--secondary:hover {
+  background: #05cdf0;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ec3000;
+}
+.btn--outline {
+  background: #fff;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
   }
+}
+
+/* input start here */
+.input{
+  /* width: 100%; */
+  padding: 1.5rem 5rem 1.5rem 2rem;
+  border-radius: 30px;
+  /* box-shadow: 0 20px 30px 20px rgb(228, 224, 224); */
+  color: var(--color-accent);
+  outline: 0;
+  font-size: 1.5rem;
   
-  .btn--primary {
-    background: var(--color-primary);
-    color: #fff;
-  }
+}
+::placeholder{
   
-  .btn--primary:hover {
-    background: #3a8ffd;
-  }
+  font-size: 1.5rem;
+}
+.input-group{
+  box-shadow: 0 10px 30px #ccc;
+  display: flex;
+  border-radius: 30px;
+  margin: 0 1rem;
+  margin-top: 2rem;
+}
+.input-group .input{
+  flex-grow: 1;
+  border: 0;
   
-  .btn--secondary {
-    background: var(--color-secondary);
-    color: #fff;
-  }
-  
-  .btn--secondary:hover {
-    background: #05cdf0;
-  }
-  
-  .btn--accent {
-    background: var(--color-accent);
-    color: #fff;
-  }
-  
-  .btn--accent:hover {
-    background: #ec3000;
-  }
-  .btn--outline {
-    background: #fff;
-    color: var(--color-headings);
-    border: 2px solid var(--color-headings);
-  }
-  
-  .btn--outline:hover {
-    background: var(--color-headings);
-    color: #fff;
-  }
-  
-  .btn--block {
-    width: 100%;
-    display: inline-block;
-  }
-  
-  @media screen and (min-width: 1024px) {
-    .btn {
-      font-size: 1.5rem;
-    }
-  }
-  
-  
+}
+.input-group button{
+  margin: 4px;
+}
+button img{
+  width:2rem;
+  height: 1.5rem;
+  margin-right:5px ;
+}
 /* .btn-container {
 
   border: 5px solid var(--color-headings);
