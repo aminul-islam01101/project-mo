@@ -9,16 +9,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <!-- style sheet link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- style sheet link -->
   </head>
   <body>
-    
+    <section class="card">
+      <header class="card__header card--primary">
+        <p class="plan__name">Business</p>
+        <span class="plan__pricing">$24</span>
+        <span class="plan__cycle">/month</span>
+        <span class="badge badge--small badge--secondary">20% off</span>
+        <p class="plan__description">Optimal Cloud Experience</p>
+      </header>
+      <div class="card-body">
+        <ul class="list list--tick">
+          <li class="list__item">Unlimited website</li>
+          <li class="list__item">Unlimited Bandwidth</li>
+          <li class="list__item">100 GB SSD Storage</li>
+          <li class="list__item">3 GB RAM</li>
+          <li class="list__item">2 CPU Cores</li>
+        </ul>
+        <button class="btn btn--block btn--outline">buy now</button>
+      </div>
+    </section>
   </body>
 </html>

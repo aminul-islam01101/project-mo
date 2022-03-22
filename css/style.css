@@ -8,6 +8,9 @@ html {
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-shadow: #ddd;
+  --border-radius: 10px;
+  --color-font: #fff;
 }
 *,
 *::after,
@@ -123,6 +126,7 @@ p {
 
 .list--tick {
   list-style-image: url(../icons/tick.svg);
+  padding-left: 2rem;
 }
 .list--tick .list__item {
   margin-bottom: 2rem;
@@ -215,7 +219,7 @@ p {
 }
 
 /* input start here */
-.input{
+.input {
   /* width: 100%; */
   padding: 1.5rem 5rem 1.5rem 2rem;
   border-radius: 30px;
@@ -223,32 +227,75 @@ p {
   color: var(--color-accent);
   outline: 0;
   font-size: 1.5rem;
-  
 }
-::placeholder{
-  
+::placeholder {
   font-size: 1.5rem;
 }
-.input-group{
+.input-group {
   box-shadow: 0 10px 30px #ccc;
   display: flex;
   border-radius: 30px;
   margin: 0 1rem;
   margin-top: 2rem;
 }
-.input-group .input{
+.input-group .input {
   flex-grow: 1;
   border: 0;
-  
 }
-.input-group button{
+.input-group button {
   margin: 4px;
 }
-button img{
-  width:2rem;
+button img {
+  width: 2rem;
   height: 1.5rem;
-  margin-right:5px ;
+  margin-right: 5px;
 }
+
+.card {
+  border-radius: var(--border-radius);
+  box-shadow: 5px 5px 30px 3px var(--color-shadow);
+
+  width: 49rem;
+  margin: 2rem;
+  overflow: hidden;
+}
+.card--primary {
+  background-color: var(--color-primary);
+}
+.card--secondary {
+  background-color: var(--color-secondary);
+}
+.plan__name {
+  color: var(--color-font);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.plan__pricing {
+  font-size: 5rem;
+  color: var(--color-font);
+}
+.plan__cycle {
+  font-size: 2.4rem;
+  color: var(--color-font);
+  opacity: 0.7;
+  margin-right: 0.5rem;
+}
+.plan__description {
+  font-size: 2rem;
+  color: var(--color-font);
+  opacity: 0.7;
+  margin: 1rem 0 0 0;
+}
+.card .list {
+  margin: 1.5rem 0;
+}
+.card header {
+  padding: 2rem;
+}
+.card-body {
+  padding: 3rem;
+}
+
 /* .btn-container {
 
   border: 5px solid var(--color-headings);
