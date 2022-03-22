@@ -291,9 +291,18 @@ button img {
 }
 .card header {
   padding: 2rem;
+  position: relative;
 }
 .card-body {
   padding: 3rem;
+}
+header img {
+  width: 100px;
+  border-radius: var(--border-radius);
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  top: -3px;
 }
 
 /* .btn-container {
